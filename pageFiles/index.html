@@ -1,52 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AJ's Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="portfolio.js">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AJ's Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="portfolio.css">
 </head>
-  <body>
-          <div class="header">
-                  <div class="sides">
 
-
-                    <a href="" id="modButton" class="logo">Contact</a>
-                    <div id="mod_Content" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="mod_Cform">
-                          <span class="close">&times;</span>
-                          <p>Some text in the Modal..</p>
-                        </div>
-                      
-                    </div>
-
-                    
-                  </div>
-                        <div class="sides"> 
-                          <div id="menuIcon">  <a href="#" class="menu"></a>
-                          </div>
-                        </div>
-                    <div class="info">
-                    <h4><a href="#category"></a></h4>
-                      <h1>Junior Software Developer</h1>
-                        <div class="meta">
-                          <a  href="https://www.linkedin.com/in/austin-rardin-65a463164/" target="" class="author"></a><br>
-                        <a href="https://www.instagram.com/aj_and_3.5/" target="">Austin Rardin</a>
-                        </div>
-                  </div>
+<body>
+  <div class="header">
+    <div class="sides">
+      <button id="modButton" class="logo">Contact</button>
+      <!-- button -->
+      <div id="contact-Modal" class="modal">
+        <div class="modalContent">
+          <span class="closeButn">&times;</span>
+          <div class="contact-Form">
+            <form id="contact-form" method="post" action="https://formspree.io/AJEFLaunch@gmail.com">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+              <br>
+              <input type="email" name="email" class="form-control" placeholder="Your E-mail" required>
+              <br>
+              <textarea name="message" class="form-control" placeholder="Your Message" cols="30" rows="4" required></textarea>
+              <input type="submit" name="" class="form-control submit" value="Send Message!">
+            </form>
           </div>
-                  <section class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl turpis, porttitor et finibus id, viverra a metus. Praesent non ante sed orci posuere varius quis sit amet dui. Cras molestie magna orci, id gravida dolor molestie in. Duis sollicitudin turpis quis tortor egestas, ut ultrices nisl elementum. Vestibulum sed ipsum eget nulla laoreet cursus in ac sem. Integer a suscipit justo, quis aliquam sapien. Maecenas et tellus nibh. Vivamus tincidunt eros id commodo pellentesque.</p>
-                      <!-- <p align="center"><a href="" class="btn twtr" target="_b"></a> -->
-                    </p>
-                  </section>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+        </div>
+      </div>
+    </div>
+    <div class="sides">
+      <div id="menuIcon">
+        <a href="#" class="menu" onclick="openNav()"></a>
+        <div id="myNav" class="overlay">
+          <a class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a onclick="closeNav()" href="#aboutSection">About</a>
+            <a onclick="closeNav()" href="#interestloc">Interests</a>
+            <a onclick="closeNav()" href="#Projects" onclick="closeNav">Projects</a>
+            <a onclick="closeNav()" target="_blank" href="/Resume.pdf" >Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <h4>
+        <a href="#category"></a>
+      </h4>
+      <h1>Junior Software Developer</h1>
+      <div class="meta">
+        <a href="https://www.linkedin.com/in/austin-rardin-65a463164/" target="" class="author"></a>
+        <br>
+        <a href="https://github.com/AustinRar1" target="">Github: Austin Rardin</a>
+      </div>
+    </div>
+  </div>
+  <section id="aboutSection" class="content">
+    <h2>About</h2>
+    <p> Life behind my computer isn't the only place I can throw myself into. Almost anything I can find interest in becomes
+      nearly 100% of my focus. A trait picked up by my father, any thing that happens around our house is fixed by him, and
+      most times the neighbors houses as well. These habits lead him to become a jack of all trades which I pick up on on
+      subconciously. I see problems that need fixing or opportunities that could use improving and wonder why don't I just
+      do that myself? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quis dicta at, vero quia dignissimos
+      consequuntur nam molestias amet laboriosam itaque cupiditate modi? Hic dolorum ex illo assumenda, aliquam voluptates?
+    </p>
+    <br>
+    <h2>Skills</h2>
+    <div class="skillsSC">
+      <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" height="120px">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/730px-CSS.3.svg.png" height="120px">
+      <img src="http://qinematic.com/wp-content/uploads/2016/03/js-logo.png" height="121px">
+      <img class="bootLogo" src="http://profil-software.pl/media/image/bootstrap.png" height="125px" alt="">
+      <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" height="118px" alt="">
+      <img src="http://travelbloggersassociation.com/cms/wp-content/uploads/2014/02/logo-photoshop.png" height="120px" style="margin-left: 15px;"
+        alt="">
+      <div id="loading"></div>
+      <p class="skillsLoading">
+        <b> Skills Loading...</b>
+      </p>
+    </div>
+    <br>
+    <h2 id="interestloc">Interests</h2>
+    <div id="tab">
+      <button style="background-color: rgb(252, 252, 252)" class="tablinks" onclick="openCity(event, 'Mechanical')" id="defaultOpen">Mechanical</button>
+      <button style="background-color: rgb(250, 250, 250)" class="tablinks" onclick="openCity(event, 'Technological')">Technological</button>
+      <button style="background-color: rgb(248, 248, 248)" class="tablinks" onclick="openCity(event, 'Musical')">Musical</button>
+      <button style="background-color: rgb(245, 245, 245)" class="tablinks" onclick="openCity(event, 'Fitness')">Fitness</button>
+    </div>
+
+    <div id="Mechanical" class="tabcontent">
+      <h3>Mechanical</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, magnam temporibus, mollitia iusto ad ipsa dicta ,
+        ullam ipsam doloremque sapiente magni excepturi consequuntur quis error consectetur earum ratione. Unde, optio?</p>
+    </div>
+
+    <div id="Technological" class="tabcontent">
+      <h3>Technological</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt optio maxime similique numquam. Quam enim omnis
+        ratione eius! Numquam, voluptatibus? Totam rem odio suscipit libero dicta mollitia natus, reiciendis ipsum!</p>
+    </div>
+    <div id="Musical" class="tabcontent">
+      <h3>Musical</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus necessitatibus obcaecati temporibus eveniet perferendis
+        saepe illum neque eaque quam nihil, tempora nostrum! Eius exercitationem iure repellat, quis nesciunt impedit voluptatum.</p>
+    </div>
+    <div id="Fitness" class="tabcontent">
+      <h3>Fitness</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, eveniet autem. Iste harum quaerat enim fuga explicabo?
+        Ea architecto quas maxime. Ducimus omnis ab maxime culpa aliquam cum rem excepturi.</p>
+    </div>
+  </section>
+  <section id="Projects">
+    <h2>Projects</h2>
+
+
+    <div class="dateProject" data-rellax-speed="2">May 15th, 2018</div>
+    <div class="dateStoreFront rellax" data-rellax-speed="3">May 21st, 2018</div>
+    <div class="DateAPI rellax" data-rellax-speed="2">May 31st,2018</div>
+    <div class="DatePS rellax" data-rellax-speed="2">2013-2016</div>
+    <div class="projectCSSimg rellax" data-rellax-speed="5">
+      <img src="https://i.imgur.com/GgTllB7.png" style="height: 300px" alt="">
+    </div>
+    <div class="projectCSS rellax" data-rellax-speed="8">
+      <a id="ProjectsTD" target="_blank" href="https://codepen.io/AJRardin22/pen/ELpLgM">
+        <h3>CSS Monster</h3>
+      </a>
+      <p class='projectsP'>The first time I have ever touched a coding program and 75% of the time spent doing this project was just exerimenting
+        with what does what.</p>
+    </div>
+
+    <div class="storeFrontCSSimg rellax" data-rellax-speed="5">
+      <img src="https://i.imgur.com/U0QeFq4.png" style="height: 180px" alt="">
+    </div>
+    <div class="storeFrontCSS rellax" data-rellax-speed="8">
+      <a id="StoreFrontTD" target="_blank" href="https://austinrar1.github.io/THE-Repository/">
+        <h3>Store Front Website</h3>
+      </a>
+      <p class='projectsP'>After finishing the CSS creature I started on my first webpage. This is my first attempt at adding js to a functioning
+        html file.</p>
+    </div>
+
+    <div class="ApiCSSimg rellax" data-rellax-speed="5">
+      <img src="https://i.imgur.com/K4cw3R6.png" style="height: 350px" alt="">
+    </div>
+    <div class="ApiCSS rellax" data-rellax-speed="8">
+      <a id="ApiTD" target="_blank" href="https://api-unsplash-boi.firebaseapp.com/">
+        <h3>Store Front Website</h3>
+      </a>
+      <p class='projectsP'>After finishing the CSS creature I started on my first webpage. This is my first attempt at adding js to a functioning
+        html file.</p>
+    </div>
+
+    <div class="PSCSSimg rellax" data-rellax-speed="6">
+      <img src="https://i.imgur.com/ADBVGVQ.png" style="height: 250px" alt="">
+    </div>
+
+    <div class="PSCSS rellax" data-rellax-speed="8">
+      <a id="PSTD" target="_blank" href="https://drive.google.com/open?id=15K7dNmNionSIt6Gaa_En5xAJ7oNGxgJH">
+        <h3>Store Front Website</h3>
+      </a>
+      <p class='PSP'>After finishing the CSS creature I started on my first webpage. This is my first attempt at adding js to a functioning
+        html file.</p>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="footerContent">
+
+    </div>
+  </footer>
+  <script src="../node_modules/rellax/rellax.min.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax');
+  </script>
+
+  <script src="portfolio.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

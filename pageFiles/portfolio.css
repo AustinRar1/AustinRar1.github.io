@@ -331,7 +331,7 @@ margin-top: 7px
   margin-left: 750px;
 }
 .projectCSS{
-  margin-top:130%;
+  margin-top:125%;
 }
 #Projects{
   height:2500px;
@@ -351,7 +351,7 @@ color: gray;
 .storeFrontCSS{
   position: absolute;
   margin-left: 45%;
-  margin-top:55%;
+  margin-top:45%;
 }
 .storeFrontCSSimg{
   position: absolute;
@@ -370,7 +370,7 @@ color: gray;
 .ApiCSS{
   position: absolute;
   margin-left: 3%;
-  margin-top:55%;
+  margin-top:45%;
 }
 .ApiCSSimg{
   margin-top:50%;
@@ -394,7 +394,7 @@ color: gray;
   height: -400px;
 }
 .PSCSS{
-  margin-top: 143%;
+  margin-top: 133%;
   margin-left: 600px;
 }
 .PSP{

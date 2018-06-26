@@ -193,8 +193,8 @@ html,body{
 }
 .author{
   display:inline-block;
-  width:50px;
-  height:50px;  
+  width:60px;
+  height:60px;  
   border-radius:50%;
   background:url(https://media.licdn.com/dms/image/C4D03AQGcu_VaCgtxCw/profile-displayphoto-shrink_200_200/0?e=1535587200&v=beta&t=n2bNMwyiwhgPgS6XngrHV0KPlCuiA6EbsOO6Y5rqalI) center no-repeat;
   background-size:cover;
@@ -480,6 +480,9 @@ projects rellax
   height: 100px;
   margin-top: -50px;
   clear: both;
+}
+.austin-rardin{
+  font-size: 30px;;
 }
 #footer p{
   margin-left: 40%;

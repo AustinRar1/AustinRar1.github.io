@@ -300,7 +300,7 @@ form .submit:hover{
   border-top-color: black;
   border-radius: 100%;
   position: relative;
-  margin-left: 740px;
+  margin-left: 762px;
   margin-top: -110px;
   animation: round 2s linear infinite
 }
@@ -309,7 +309,7 @@ form .submit:hover{
   to{transform: rotate(360deg)}
 }
 .skillsLoading{
-margin-left: 703px;
+margin-left: 715px;
 margin-top: 7px
 }
 .bootLogo{

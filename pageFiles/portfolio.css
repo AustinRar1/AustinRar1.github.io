@@ -90,8 +90,8 @@ html,body{
 
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  top: -23px;
+  right: 12px;
   font-size: 60px;
 }
 
